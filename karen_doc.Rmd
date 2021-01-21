@@ -1,0 +1,22 @@
+---
+title: "karen_doc"
+author: "Karen"
+date: "1/20/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r}
+adelie <- penguins %>% 
+		     filter(species == “Adelie”)
+
+ggplot(data = adelie, 
+       aes(x = bill_depth_mm, y = bill_lenth_mm)) + 
+       geom_point()
+```
+
