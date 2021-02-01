@@ -59,6 +59,8 @@ ggplot(pal_pika, aes(x=longitude, y=latitude) ) +
 ```
 
 ```{r}
+# https://www.littlemissdata.com/blog/maps
+
 if(!requireNamespace("devtools")) install.packages("devtools")
 devtools::install_github("dkahle/ggmap", ref = "tidyup", force=TRUE)
 
